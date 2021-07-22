@@ -29,7 +29,7 @@ jobs:
     - name: Build kavetech Web 
       run: yarn build
       env:
-        NEXT_PUBLIC_BASE_PATH: https://tech.kavehome.com
+        NEXT_PUBLIC_BASE_PATH: /docs
   
     - run: touch ./out/.nojekyll
     
