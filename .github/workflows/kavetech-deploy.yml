@@ -24,15 +24,13 @@ jobs:
       
 
     - name: Installing my packages
-      run: npm ci
+      run: yarn install
 
     - name: Build kavetech Web 
-      run: npm run build
+      run: yarn build
       env:
         NEXT_PUBLIC_BASE_PATH: ./
-    - run: npm run export
-      env:
-        NEXT_PUBLIC_BASE_PATH: ./
+  
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
