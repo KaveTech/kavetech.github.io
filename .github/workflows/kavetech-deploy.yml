@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -26,13 +26,13 @@ jobs:
     - name: Installing my packages
       run: npm ci
 
-    - name: Build my App  
+    - name: Build kavetech Web 
       run: npm run build
       env:
-        NEXT_PUBLIC_BASE_PATH: /youtube-2020-august-github-pages-github-actions
+        NEXT_PUBLIC_BASE_PATH: /app
     - run: npm run export
       env:
-        NEXT_PUBLIC_BASE_PATH: /youtube-2020-august-github-pages-github-actions
+        NEXT_PUBLIC_BASE_PATH: /app
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀
