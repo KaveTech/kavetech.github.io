@@ -3,6 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 16px;
+    overflow: hidden;
   }
 }
 .header{
@@ -155,4 +156,56 @@
     
     }
   }
+}
+.values{
+  h3{
+    margin-bottom: 0;
+  }
+  .container{
+    margin-bottom: 48px;
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+    div{
+      margin-top: 32px;
+    }
+  }
+  .imagesbox{
+    display: flex;
+  }
+  .image{
+    width: calc(50% - 4px);
+    padding: 8px;
+    div{
+      width: 100%;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .highlighttext{
+    min-height: 200px;
+    display: flex;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+    align-items: center;
+  }
+}
+.hiringbox{
+  background-color: #FF3D3A;
+  color: #fff;
+  min-height: 200px;
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+}
+.footer{
+  padding: 24px;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  justify-content: space-between;
+  align-items: center;
 }

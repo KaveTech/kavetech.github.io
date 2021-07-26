@@ -6,7 +6,7 @@ import { useLocomotiveScroll } from 'react-locomotive-scroll'
 export default function Hero() {
     const { scroll } = useLocomotiveScroll()
   return (
-    <div className={styles.hero}  data-scroll-section>
+    <div className={styles.hero} data-scroll-section>
         <div className={styles.container} >
         <h1 className={styles.title} data-scroll data-scroll-speed="3">
         <span className={styles.headsmall} data-scroll-delay="4">WE MAKE</span>
