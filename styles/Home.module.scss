@@ -3,7 +3,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 16px;
-    overflow: hidden;
   }
 }
 .header{
@@ -191,6 +190,24 @@
     font-style: italic;
     text-align: center;
     align-items: center;
+    @media (min-width: 1024px) {
+      max-width: 560px;
+    }
+  }
+  .treeimage{
+    @media (min-width: 1024px) {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+.formsection{
+  @media (min-width: 1024px) {
+    display: flex;
+    width: 100%;
+    margin-top: 62px;
   }
 }
 .hiringbox{
@@ -200,12 +217,52 @@
   display: flex;
   padding: 48px 24px;
   flex-direction: column;
+  width: 100%;
+  @media (min-width: 1024px) {
+    padding: 48px
+  }
+  h3{
+    font-size: 24px;
+    @media (min-width: 1024px) {
+      font-size: 36px;
+    }
+  }
+  .hiringtext{
+    display: flex;
+    margin: 48px 0;
+    align-content: center;
+    align-items: center;
+    @media (min-width: 1024px) {
+      margin: 120px 0;
+    }
+  }
+  .hiringboxcontent{
+    @media (min-width: 1024px) {
+      max-width: 600px;
+      margin-right: auto;
+    }
+  }
 }
 .footer{
-  padding: 24px;
+  padding: 24px 8px;
   display: flex;
   width: 100%;
   font-size: 14px;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
+  @media (min-width: 1024px) {
+    padding: 24px;
+  }
+  a{
+    display: block;
+    display: flex;
+    align-items: center;
+    span {
+      display: block;
+    }
+  }
+  .logo{
+    margin-left: 8px;
+  }
 }

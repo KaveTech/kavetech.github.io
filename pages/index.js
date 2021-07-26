@@ -80,20 +80,20 @@ export default function Home() {
           </div>
           <div className={styles.treeimage}>
           <div className={styles.imagesbox}>
-          <div className={styles.image}>
-            <Image 
-          src="/pic-3.jpg"
-          width={300} height={453}
-          alt="Kavetech"
-          />
-            </div>
             <div className={styles.image}>
-            <Image 
-            src="/pic-4.jpg"
+              <Image 
+            src="/pic-3.jpg"
             width={300} height={453}
-            alt="KaveTech"
-           />
-          </div>
+            alt="Kavetech"
+            />
+              </div>
+              <div className={styles.image}>
+              <Image 
+              src="/pic-4.jpg"
+              width={300} height={453}
+              alt="KaveTech"
+            />
+            </div>
           </div>
           <div className={styles.highlighttext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis augue dolor. </div>
           </div>

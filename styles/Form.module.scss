@@ -1,6 +1,14 @@
 .form{
     background-color: #F3F3F3;
     padding: 48px 24px 96px;
+    width: 100%;
+    @media (min-width: 1024px) {
+        padding: 48px 48px  96px;
+      }
+    .formbox{
+        max-width: 548px;
+        margin-left: auto;
+    }
     h2{
         font-size: 46px;
         color: #373736;

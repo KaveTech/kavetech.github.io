@@ -4,6 +4,7 @@ import styles from '../../styles/Form.module.scss'
 export default function Form() {
   return (
     <div className={styles.form}>
+        <div className={styles.formbox}>
         <h2>Contact us!</h2>
             <div className={styles.labelbox}>
                 <label>Email</label>    
@@ -24,6 +25,7 @@ export default function Form() {
             </div>
             <div className={styles.submitbox}>  
                 <button className='submit-btn' type='submit'>Send</button>
+            </div>
             </div>
         </div>
   )
