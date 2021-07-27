@@ -7,6 +7,7 @@ import Hero from './components/hero'
 import Form from './components/form'
 import Hiring from './components/hiring'
 import Footer from './components/footer'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export default function Home() {

@@ -7,7 +7,9 @@
 }
 .header{
   background-color: white;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 1;
   .container{
     position: relative;
