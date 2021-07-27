@@ -9,7 +9,7 @@ export default function Hiring() {
         <div className={styles.linkdin}>
             <Image src="/linkedin.svg" alt="likendin" width={48} height={48} />
         </div>
-        <a href="https://kavehome.com/es/es/jobs/" target='_blank'  className={styles.hiringtext}>
+        <a href="https://kavehome.com/es/es/jobs/" rel="noreferrer" target='_blank'  className={styles.hiringtext}>
             <h3>We are hiring</h3>
             <div className="arrow-bottom">
             <Image src="/arrow.svg" alt="go to" width={120} height={8} />

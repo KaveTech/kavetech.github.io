@@ -72,7 +72,7 @@ export default function Header() {
               Contact us
             </Link>
             <Linkto  href="https://kavehome.com/es/es/jobs/">
-                <a className={styles.callbtn}  target="_blank">CARRERS</a>
+                <a className={styles.callbtn} rel="noreferrer" target="_blank">CARRERS</a>
             </Linkto>
         </nav>
         </div>
