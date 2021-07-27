@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "glob-parent": "^5.1.2",
+    "hamburger-react": "^2.4.1",
     "next": "11.0.1",
     "next-optimized-images": "^2.6.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-scroll": "^1.8.3",
+    "sass": "^1.35.2"
   },
   "devDependencies": {
     "eslint": "7.31.0",

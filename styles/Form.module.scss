@@ -1,0 +1,51 @@
+.form{
+    background-color: #F3F3F3;
+    padding: 48px 24px 96px;
+    width: 100%;
+    @media (min-width: 1024px) {
+        padding: 48px 48px  96px;
+      }
+    .formbox{
+        max-width: 548px;
+        margin-left: auto;
+    }
+    h2{
+        font-size: 46px;
+        color: #373736;
+        margin-top: 16px;
+    }
+    input, textarea{
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 6px 0 rgba(225,225,225,0.50);
+        border-radius: 4px;
+        color: #373736;
+        border: none;
+        padding: 12px 16px;
+        line-height: 24px;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    label{
+        margin-bottom: 4px;
+        display: block;
+    }
+    .labelbox{
+        margin-top: 36px;
+    }
+    .submitbox{
+        margin-top: 24px;
+        button{
+            background-color: #FF3D3A;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            text-align: center;
+            border-radius: 8px;
+            padding: 16px 36px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+    }
+}
