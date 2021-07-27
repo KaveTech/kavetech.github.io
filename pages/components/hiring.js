@@ -11,7 +11,7 @@ export default function Hiring() {
         </div>
         <a href="https://kavehome.com/es/es/jobs/" target='_blank'  className={styles.hiringtext}>
             <h3>We are hiring</h3>
-            <div class="arrow-bottom">
+            <div className="arrow-bottom">
             <Image src="/arrow.svg" alt="go to" width={120} height={8} />
             </div>
         </a>

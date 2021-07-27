@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className={styles.footer} data-scroll-section>
+    <footer className={styles.footer}>
         <div className={styles.copyright}>
             2021  kavetech ©
         </div>

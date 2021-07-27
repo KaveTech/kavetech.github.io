@@ -7,15 +7,12 @@ import Hero from './components/hero'
 import Form from './components/form'
 import Hiring from './components/hiring'
 import Footer from './components/footer'
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
+
 
 export default function Home() {
-  const containerRef = useRef(null);
-  const { scroll } = useLocomotiveScroll()
 
   return (
-    <div data-scroll-container >
+    <>
       <Head>
         <title>KaveTech</title>
         <meta name="description" content="Kavetech" />
@@ -25,17 +22,10 @@ export default function Home() {
           rel="stylesheet"
           />
       </Head>
-      <LocomotiveScrollProvider containerRef={containerRef} 
-      options={
-        {
-          smooth: true,
-        }
-      }
-      >
       <Header  />
-      <main className={styles.main} ref={containerRef}>
+      <main className={styles.main}>
       <Hero  />
-      <section id="WhoAre" className={styles.contentbox} data-scroll-section>
+      <section className={styles.contentbox} id="who-are">
         <div className={styles.container}>
           <div className={styles.boxsize}>
           <div className={styles.imagebox}><Image src="/pic-1.jpg" alt="kavehome" width={743} height={502} /></div>
@@ -52,7 +42,8 @@ export default function Home() {
           
         </div>
       </section>
-      <section data-scroll-section>
+ 
+      <section>
       <div style={{  position: 'relative', width: '100vw', height: '66.66vw'}}>
         <Image 
           src="/pic-2.jpg"
@@ -62,7 +53,8 @@ export default function Home() {
           />
       </div>
       </section>
-      <section id="MissionValue" className={styles.contentbox +' '+ styles.values } data-scroll-section>
+
+      <section id="mission-value" className={styles.contentbox +' '+ styles.values }>
           <h2 className="center">Missions & values</h2>
           <div className={styles.container}>
             <div className="center">
@@ -98,13 +90,15 @@ export default function Home() {
           <div className={styles.highlighttext}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis augue dolor. </div>
           </div>
       </section>
-      <section id="ContactUs" className={styles.formsection} data-scroll-section>
+     
+ 
+      <section id="contact-us" className={styles.formsection}>
         <Form  />
         <Hiring  />
       </section>
+  
       </main>
       <Footer  />
-      </LocomotiveScrollProvider>
-      </div>
+      </>
   )
 }
